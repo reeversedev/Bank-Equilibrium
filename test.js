@@ -1,4 +1,4 @@
-function equilibrium(nOfValues, array) {
+function BankEquilibrium(nOfValues, array) {
     var leftSum = 0;
     var collection = [];
     var rightSum = array.reduce((totalSum, number) => totalSum + number, 0);
@@ -14,7 +14,7 @@ function equilibrium(nOfValues, array) {
     return collection.join();
 }
 
-console.log(equilibrium(8, [0, -3, 5, -4, -2, 3, 1, 0]));
-console.log(equilibrium(11, [3, -2, 2, 0, 3, 4, -6, 3, 5, -4, 8]));
-console.log(equilibrium(11, [9, 0, -5, -4, 1, 4, -4, -9, 0, -7, -1]));
-console.log(equilibrium(11, [9, -7, 6, -8, 3, -9, -5, 3, -6, -8, 5]));
+console.log(BankEquilibrium(8, [0, -3, 5, -4, -2, 3, 1, 0]));
+console.log(BankEquilibrium(11, [3, -2, 2, 0, 3, 4, -6, 3, 5, -4, 8]));
+console.log(BankEquilibrium(11, [9, 0, -5, -4, 1, 4, -4, -9, 0, -7, -1]));
+console.log(BankEquilibrium(11, [9, -7, 6, -8, 3, -9, -5, 3, -6, -8, 5]));
